@@ -7,8 +7,8 @@
 
 # Script settings (feel free to change these)
 ffmpegbin='/usr/bin/ffmpeg'      # Location of FFMpeg binary
-fileext='avi'                    # File extension to use for converted files (avi, mp4, flv, etc)
-vcodec='xvid'                    # Default value: video codec (xvid, mpeg4, flv, etc)
+fileext='mp3'                    # File extension to use for converted files (avi, mp4, flv, etc)
+vcodec='none'                    # Default value: video codec (xvid, mpeg4, flv, etc)
 vfps='29.97'                     # Default value: FPS (29.97)
 vsize='720x480'                  # Default value: frame size (720x480)
 videob='4500k'                   # Default value: video bitrate (4500k)
