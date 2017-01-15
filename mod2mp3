@@ -1,7 +1,7 @@
 #!/bin/bash
-# mod2avi - converts video files from MOD format to AVI/MPG/other formats, based on FFMPEG
+# mod2mp3 - converts MOD files to MP3 format, based on FFMPEG
 
 INPUT_FILE="$1"
 OUTPUT_FILE="`echo $INPUT_FILE | sed -e s/.mod/.mp3/g`"
 
-/usr/bin/ffmpeg -i $INPUT_FILE -acodec mp3 -ab 192k -ar 48000 $OUTPUT_FILE
+ffmpeg -i $INPUT_FILE -acodec mp3 -ab 192k -ar 48000 $OUTPUT_FILE
