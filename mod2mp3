@@ -2,7 +2,9 @@
 # mod2mp3 - converts MOD files to MP3 format, based on FFMPEG
 
 if [ -z "$1" ]; then
+  echo "Error: please specify a *.mod filename as argument"
   echo "Usage: $0 file.mod"
+  exit 1
 fi
 
 
