@@ -1,6 +1,11 @@
 #!/bin/bash
 # mod2mp3 - converts MOD files to MP3 format, based on FFMPEG
 
+if [ -z "$1" ]; then
+  echo "Usage: $0 file.mod"
+fi
+
+
 INPUT_FILE="$1"
 OUTPUT_FILE="`echo $INPUT_FILE | sed -e s/.mod/.mp3/g`"
 
